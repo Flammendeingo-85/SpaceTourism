@@ -1,0 +1,56 @@
+/* ----------------- */
+/* --- CSS RESET --- */
+/* ----------------- */
+
+/* BOX SIZING */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* RESET MARGINS */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+/* SETUP THE BODY */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* IMAGES RESET */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* FORM ELEMENTS RESET */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ANIMATION RESET WHEN TURNED OFF */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration:0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01 !important;
+    scroll-behavior: auto !important;
+  }
+}
